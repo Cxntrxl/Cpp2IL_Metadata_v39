@@ -170,10 +170,10 @@ public class Il2CppMetadata : ClassReadingBinaryReader
         methodDefs = ReadMetadataClassArray<Il2CppMethodDefinition>(metadataHeader.methodsOffset, metadataHeader.methodsCount);
         LibLogger.VerboseNewline($"OK ({(DateTime.Now - start).TotalMilliseconds} ms)");
 
-        LibLogger.Verbose("\tReading method parameter definitions...");
-        start = DateTime.Now;
-        parameterDefs = ReadMetadataClassArray<Il2CppParameterDefinition>(metadataHeader.parametersOffset, metadataHeader.parametersCount);
-        LibLogger.VerboseNewline($"OK ({(DateTime.Now - start).TotalMilliseconds} ms)");
+        //LibLogger.Verbose("\tReading method parameter definitions...");
+        //start = DateTime.Now;
+        //parameterDefs = ReadMetadataClassArray<Il2CppParameterDefinition>(metadataHeader.parametersOffset, metadataHeader.parametersCount);
+        //LibLogger.VerboseNewline($"OK ({(DateTime.Now - start).TotalMilliseconds} ms)");
 
         LibLogger.Verbose("\tReading field definitions...");
         start = DateTime.Now;
