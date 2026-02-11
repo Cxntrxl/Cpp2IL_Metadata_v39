@@ -67,9 +67,9 @@ public class Il2CppMetadata : ClassReadingBinaryReader
         }
 
         var version = BitConverter.ToInt32(bytes, 4);
-        if (version is < 23 or > 31)
+        if (version is < 23 or > 39)
         {
-            throw new FormatException("Unsupported metadata version found! We support 23-31, got " + version);
+            throw new FormatException("Unsupported metadata version found! We support 23-39, got " + version);
         }
 
         LibLogger.VerboseNewline($"\tIL2CPP Metadata Declares its version as {version}");
